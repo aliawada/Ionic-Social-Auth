@@ -1,14 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic + Facebook
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <button ion-button full icon-left (click)='loginFacebook();'>
+      <ion-icon name="logo-facebook"></ion-icon>Login com Facebook
+    </button>
+
+    <button ion-button full icon-left (click)='loginGoogle();'>
+      <ion-icon name="logo-googleplus"></ion-icon>Login com Google
+    </button>
 </ion-content>
